@@ -114,3 +114,12 @@ setup backwards.
 
 And now think about loops and conditions and being able to create docker
 compose definitions really dynamically.
+
+
+Epilogue:
+---------
+
+I'm creating this package specifically in the light of one of my previous
+packages "stephanschuler/from-php". The goal is having PhpStorm call some
+docker-compose.yaml.php files and automatically create docker-compose.yaml
+files whenever changes to the .yaml.php file are made.

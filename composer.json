@@ -12,6 +12,9 @@
         "php": "~7.2",
         "ext-json": "*"
     },
+    "suggest": {
+        "stephanschuler/from-php": "Have file watches of your IDE call docker-compose.yaml.php files automatically."
+    },
     "autoload": {
         "psr-4": {
             "StephanSchuler\\DockerComposeSchema\\": "src"
