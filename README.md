@@ -19,6 +19,11 @@ with and I'm trying to cover those af first. But I do know there are a lot of th
 you can do with docker-compose that are not supported by this lib just because I
 haven't used them and didn't come around to put them in.
 
+Handling still feels a bit columsy. Especially when some classes need to be created
+by the composition object for having back references while others are just value
+objects. And I'm kind of unhappy with the fluent interface currently suggesting
+immutability, which is definitively not the case.
+
 
 Example
 -------
@@ -87,6 +92,7 @@ $web->withLinkedService($redis);
 echo json_encode($composition, JSON_PRETTY_PRINT);
 
 ```
+
 
 But why?
 --------
